@@ -1,0 +1,1397 @@
+{
+	"folder_history":
+	[
+	],
+	"last_window_id": 1,
+	"settings":
+	{
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"bm",
+						"bm_xts"
+					],
+					[
+						"ac",
+						"active_ann_ret_g"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/nick/FSparser/DSIDmapping.csv",
+					"settings":
+					{
+						"buffer_size": 509,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "perl>  use Cwd\n$dir = getcwd\n\n$workingdir = \"/home/nick/FSparser\"\nchdir $workingdir\n\n $sourcedir = $dir . \"/Source_Data\"\n\nfind( sub { my $f = $_; push( @datafile, $f ) if $f =~ /^Div_RD\\_\\d{1}(.*)\\.txt$/; },$sourcedir);\n\n\n\nperl>  /home/nick/FSparser\nperl>  \nperl>  /home/nick/FSparser\nperl>  1\nperl>  \nperl>  /home/nick/FSparser/Source_Data\nperl>  \nperl>  Undefined subroutine &main::find called at (eval 11) line 1, <> line 9.\nperl>  \nperl>  \nperl>  find( sub { my $f = $_; push( @datafile, $f ) if $f =~ /^Div_RD\\_\\d{1}(.*)\\.txt$/; },$sourcedir);\n\nUndefined subroutine &main::find called at (eval 14) line 1, <> line 12.\nperl>  \nperl>  use Cwd\n$dir = getcwd\n\n$workingdir = \"/home/nick/FSparser\"\nchdir $workingdir\n\n $sourcedir = $dir . \"/Source_Data\"\n\nfind( sub { my $f = $_; push( @datafile, $f ) if $f =~ /^Div_RD\\_\\d{1}(.*)\\.txt$/; },$sourcedir);\nperl>  /home/nick/FSparser\nperl>  \nperl>  /home/nick/FSparser\nperl>  1\nperl>  \nperl>  /home/nick/FSparser/Source_Data\nperl>  \nperl>  print @datafile\nUndefined subroutine &main::find called at (eval 24) line 1, <> line 22.\nperl>  use File::Find\n\nperl>  use Cwd\n$dir = getcwd\n\n$workingdir = \"/home/nick/FSparser\"\nchdir $workingdir\n\n $sourcedir = $dir . \"/Source_Data\"\n\nfind( sub { my $f = $_; push( @datafile, $f ) if $f =~ /^Div_RD\\_\\d{1}(.*)\\.txt$/; },$sourcedir);\n\nperl>  /home/nick/FSparser\nperl>  \nperl>  /home/nick/FSparser\nperl>  1\nperl>  \nperl>  /home/nick/FSparser/Source_Data\nperl>  \nperl>  \nperl>  print @datafile\nDiv_RD_1_Summit_PBK.txtDiv_RD_1_Summit_PE.txtDiv_RD_1_Summit_MMT.txtDiv_RD_1_Summit_NegEarning.txt1\nperl>  $#datafile\n3\nperl>  find( sub { my $f = $_; push( @datafile, $f ) if $f =~ /^Div_RD\\_(.*)\\.txt$/; },$sourcedir);\n\n\nperl>  \nperl>  print @datafile\nDiv_RD_1_Summit_PBK.txtDiv_RD_1_Summit_PE.txtDiv_RD_1_Summit_MMT.txtDiv_RD_1_Summit_NegEarning.txtDiv_RD_1_Summit_PBK.txtDiv_RD_1_Summit_PE.txtDiv_RD_1_Summit_MMT.txtDiv_RD_1_Summit_NegEarning.txt1\nperl>  find( sub { my $f = $_; push( @datafile, $1 ) if $f =~ /^Div_RD\\_(.*)\\.txt$/; },$sourcedir);\n\n\nperl>  \nperl>  print @datafile\nDiv_RD_1_Summit_PBK.txtDiv_RD_1_Summit_PE.txtDiv_RD_1_Summit_MMT.txtDiv_RD_1_Summit_NegEarning.txtDiv_RD_1_Summit_PBK.txtDiv_RD_1_Summit_PE.txtDiv_RD_1_Summit_MMT.txtDiv_RD_1_Summit_NegEarning.txt1_Summit_PBK1_Summit_PE1_Summit_MMT1_Summit_NegEarning1\nperl>  find( sub { my $f = $_; push( @datafile, $1 ) if $f =~ m/^Div_RD\\_(.*)\\.txt$/; },$sourcedir);\n\n\nperl>  \nperl>  print @datafile\nDiv_RD_1_Summit_PBK.txtDiv_RD_1_Summit_PE.txtDiv_RD_1_Summit_MMT.txtDiv_RD_1_Summit_NegEarning.txtDiv_RD_1_Summit_PBK.txtDiv_RD_1_Summit_PE.txtDiv_RD_1_Summit_MMT.txtDiv_RD_1_Summit_NegEarning.txt1_Summit_PBK1_Summit_PE1_Summit_MMT1_Summit_NegEarning1_Summit_PBK1_Summit_PE1_Summit_MMT1_Summit_NegEarning1\nperl>  @datafile = ()\n0\nperl>  find( sub { my $f = $_; push( @datafile, $1 ) if $f =~ m/^Div_RD\\_(.*)\\.txt$/; },$sourcedir);\n\nperl>  @datafile = ()\n0\nperl>  find( sub { my $f = $_; push( @datafile, $1 ) if $f =~ m/^Div_RD\\_(.*)\\.txt$/; },$sourcedir);\n\nperl>  print @datafile\n1_Summit_PBK1_Summit_PE1_Summit_MMT1_Summit_NegEarning1\nperl>  my $t = Time::Piece->strptime(\"20111230\", \"%Y%m%d\");\nCan't locate object method \"strptime\" via package \"Time::Piece\" (perhaps you forgot to load \"Time::Piece\"?) at (eval 55) line 1, <> line 49.\nperl>  use Time::Piece;\n\nperl>  my $t = Time::Piece->strptime(\"20111230\", \"%Y%m%d\");\nFri Dec 30 00:00:00 2011\nperl>  $d = \"20120131\"\n20120131\nperl>  $d =~ m/^(\\d{4})(\\d{2})(\\d{2})$/)\nsyntax error at (eval 59) line 3, near \"m/^(\\d{4})(\\d{2})(\\d{2})$/)\n\n\"\nperl>  $d =~ m/^(\\d{4})(\\d{2})(\\d{2})$/\n1\nperl>  $1\n\nperl>  print $1\n1\nperl>  if($d =~ m/^(\\d{4})(\\d{2})(\\d{2})$/) { print $2.'/'.$3.'/'.$1}\n01/31/20121\nperl>  getcwd\n/home/nick/FSparser\nperl>  Div_RD_parser.perl\nDiv_RD_parserperl\nperl>  Div_RD_parser.pl\nDiv_RD_parserpl\nperl>  #my $file=$ARGV[0];\nmy $file=\"/home/nick/FSparser/Source_Data/Div_RD_1_Summit_PBK.txt\";\n\n# Open and read the trade data file and parsing it only drag out the data item listed in @symtrade\nopen (Data, $file) or die (\"Could not open $file: $!\");\n\n#read line by line and choose the data that match the selected stock symbol\nmy $line = <Data>;\n@header=split(';',$line);\n$NOF=0.5*($#header+1-8);\n#print $NOF;\n%dataset=();\nfor ( $i=0;$i<$NOF;$i++)\n{\n$header[8+$i*2]=substr($header[8+$i*2],1,-1);\n$dataset{$header[8+$i*2]}={%factor};\n\n}\n\n#print substr($header[1],1,-1);\n# print \"$line \\n\";\n# print \"number of factors is $NOF \\n \"; \n\n while (defined ($line = <Data>)) {\n     chomp $line;\n\n	@data=split(';',$line);\n	for($i=0;$i<$NOF;$i++)\n	{\n	if(!exists($dataset{$header[8+$i*2]}{$data[3]}))\n	{\n	$dataset{$header[8+$i*2]}{$data[3]}={%quartile};\n	for($k=1;$k<5;$k++)\n	{\n	$dataset{$header[8+$i*2]}{$data[3]}{$k}=[@tmp];\n	}\n	$dataset{$header[8+$i*2]}{$data[3]}{'NA'}=[@tmp];\n	$dataset{$header[8+$i*2]}{$data[3]}{'Universe'}=[@tmp];\n	}\n	#print \"$data[8+$i*2+1]\\n\";\n	if($data[5] ne 'NA' && $data[6] ne 'NA')\n	{\n	$dataset{$header[8+$i*2]}{$data[3]}{$data[8+$i*2+1]}[0]+=($data[5]*$data[6]);\n	#print \"$dataset{$header[8+$i*2]}{$data[3]}{$data[8+$i*2+1]}[1]\\n\";\n	$dataset{$header[8+$i*2]}{$data[3]}{$data[8+$i*2+1]}[1]+=$data[6];\n	$dataset{$header[8+$i*2]}{$data[3]}{'Universe'}[0]+=($data[5]*$data[6]);\n	$dataset{$header[8+$i*2]}{$data[3]}{'Universe'}[1]+=$data[6];\n	}\n	}\n	\n }\nclose Data;\n\nperl>  /home/nick/FSparser/Source_Data/Div_RD_1_Summit_PBK.txt\nperl>  \nperl>  \nperl>  Could not open : No such file or directory at (eval 71) line 1, <> line 65.\nperl>  \nperl>  \nperl>  \nperl>  3\nperl>  -2.5\nperl>  \nperl>  0\nperl>  syntax error at (eval 79) line 3, at EOF\nperl>  Missing right curly or square bracket at (eval 80) line 3, at end of line\nsyntax error at (eval 80) line 3, at EOF\nperl>  \nperl>  HASH(0xbcfa10)\nperl>  \nperl>  Unmatched right curly bracket at (eval 84) line 1, at end of line\nsyntax error at (eval 84) line 1, near \"}\"\nperl>  \nperl>  \nperl>  \nperl>  \nperl>  \nperl>  Missing right curly or square bracket at (eval 90) line 3, at end of line\nsyntax error at (eval 90) line 3, at EOF\nperl>  1\nperl>  \nperl>  3\nperl>  syntax error at (eval 94) line 3, at EOF\nperl>  Missing right curly or square bracket at (eval 95) line 3, at end of line\nsyntax error at (eval 95) line 3, at EOF\nperl>  syntax error at (eval 96) line 3, at EOF\nperl>  Missing right curly or square bracket at (eval 97) line 3, at end of line\nsyntax error at (eval 97) line 3, at EOF\nperl>  HASH(0xcbf150)\nperl>  syntax error at (eval 99) line 3, at EOF\nperl>  Missing right curly or square bracket at (eval 100) line 3, at end of line\nsyntax error at (eval 100) line 3, at EOF\nperl>  ARRAY(0xd8bfc8)\nperl>  Unmatched right curly bracket at (eval 102) line 1, at end of line\nsyntax error at (eval 102) line 1, near \"}\"\nperl>  ARRAY(0xcbf1b0)\nperl>  ARRAY(0xd78c20)\nperl>  Unmatched right curly bracket at (eval 105) line 1, at end of line\nsyntax error at (eval 105) line 1, near \"}\"\nperl>  \nperl>  syntax error at (eval 107) line 3, at EOF\nperl>  Missing right curly or square bracket at (eval 108) line 3, at end of line\nsyntax error at (eval 108) line 3, at EOF\nperl>  0\nperl>  \nperl>  0\nperl>  0\nperl>  0\nperl>  Unmatched right curly bracket at (eval 114) line 1, at end of line\nsyntax error at (eval 114) line 1, near \"}\"\nperl>  Unmatched right curly bracket at (eval 115) line 1, at end of line\nsyntax error at (eval 115) line 1, near \"}\"\nperl>  \nperl>  Unmatched right curly bracket at (eval 117) line 1, at end of line\nsyntax error at (eval 117) line 1, near \"}\"\nperl>  \nperl>  ",
+					"settings":
+					{
+						"buffer_size": 7465,
+						"line_ending": "Unix",
+						"name": "*REPL* [perl]",
+						"scratch": true
+					}
+				},
+				{
+					"file": "/home/nick/FSparser/Source_Data/Div_RD_1_Summit_PBK.txt",
+					"settings":
+					{
+						"buffer_size": 4084968,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/home/nick/model_check/HW1.1.R",
+					"settings":
+					{
+						"buffer_size": 3030,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/nick/FSparser/Name_Format.md",
+					"settings":
+					{
+						"buffer_size": 2087,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/nick/.config/sublime-text-2/Packages/Color Scheme - Default/Monokai.tmTheme",
+					"settings":
+					{
+						"buffer_size": 11545,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/nick/FSparser/ATparse.pl",
+					"settings":
+					{
+						"buffer_size": 2864,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/home/nick/FSparser/Div_RD_parser.pl",
+					"settings":
+					{
+						"buffer_size": 3966,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/home/nick/FSparser/TtoolParser.pl",
+					"settings":
+					{
+						"buffer_size": 3296,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/nick/FSparser/perl_example.pl",
+					"settings":
+					{
+						"buffer_size": 8567,
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 375.0,
+				"selected_items":
+				[
+					[
+						"pac",
+						"Package Control: Install Package"
+					],
+					[
+						"pa",
+						"Package Control: Install Package"
+					],
+					[
+						"pack",
+						"Package Control: Install Package"
+					],
+					[
+						"p",
+						"Package Control: Remove Package"
+					],
+					[
+						"Package Control: r",
+						"Package Control: Remove Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Remove Package"
+					],
+					[
+						"",
+						"Package Control: Install Package"
+					],
+					[
+						"p	",
+						"Package Control: Install Package"
+					],
+					[
+						"pa	",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 435.0
+			},
+			"console":
+			{
+				"height": 139.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/nick/.config/sublime-text-2/Packages/DetectSyntax/DetectSyntax.sublime-settings",
+				"/home/nick/.config/sublime-text-2/Packages/SmartMarkdown/Default.sublime-keymap",
+				"/home/nick/FSparser/output.txt",
+				"/home/nick/FSparser/test.pl",
+				"/home/nick/FSparser/out.txt",
+				"/home/nick/FSparser/sample_quality.txt",
+				"/home/nick/FSparser/Working_Folder/temp_output.csv",
+				"/home/nick/FSparser/123.txt",
+				"/home/nick/FSparser/Working_Folder/temp_output.txt",
+				"/home/nick/.config/sublime-text-2/Packages/Terminal/Default (Linux).sublime-keymap",
+				"/home/nick/model_check/currencies/currencies.r",
+				"/home/nick/model_check/Global_model/modelcheck.r",
+				"/home/nick/model_check/calc_ret.r",
+				"/home/nick/FSparser/ATparse.pl",
+				"/home/nick/FSparser/sample_ttool.txt",
+				"/home/nick/ruby_learning/test.rb",
+				"/home/nick/model_check/modelcheck.r",
+				"/home/nick/python_learning/test.py",
+				"/home/nick/.config/sublime-text-2/Packages/SublimeRope/SublimeRope.sublime-settings",
+				"/home/nick/.config/sublime-text-2/Packages/Package Control/Package Control.sublime-settings",
+				"/home/nick/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+				"/home/nick/.config/sublime-text-2/Packages/Default/exec.py",
+				"/home/nick/.config/sublime-text-2/Packages/User/rspec.py"
+			],
+			"find":
+			{
+				"height": 49.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": true,
+				"find_history":
+				[
+					"NA",
+					"... ",
+					"print",
+					"@days",
+					"NA",
+					"Universe",
+					"!\"",
+					"tidy"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": true,
+				"wrap": false
+			},
+			"groups":
+			[
+				{
+					"selected": 4,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/nick/FSparser/DSIDmapping.csv",
+							"settings":
+							{
+								"buffer_size": 509,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										225,
+										225
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"settings":
+							{
+								"buffer_size": 7465,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										7465,
+										7465
+									]
+								],
+								"settings":
+								{
+									"auto_complete": true,
+									"auto_indent": false,
+									"detect_indentation": false,
+									"gutter": false,
+									"history_arrows": true,
+									"indent_subsequent_lines": false,
+									"line_numbers": false,
+									"repl": true,
+									"repl_external_id": "perl",
+									"repl_id": "1c7e3da3629749819f242fbce536f532",
+									"smart_indent": false,
+									"syntax": "Packages/Perl/Perl.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 4772.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/nick/FSparser/Source_Data/Div_RD_1_Summit_PBK.txt",
+							"settings":
+							{
+								"buffer_size": 4084968,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1479,
+										1479
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/nick/model_check/HW1.1.R",
+							"settings":
+							{
+								"buffer_size": 3030,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1149,
+										1149
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/R/R.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 648.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/home/nick/FSparser/Name_Format.md",
+							"settings":
+							{
+								"buffer_size": 2087,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2087,
+										2087
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Markdown/Markdown.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 908.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/nick/.config/sublime-text-2/Packages/Color Scheme - Default/Monokai.tmTheme",
+							"settings":
+							{
+								"buffer_size": 11545,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										11360,
+										11360
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/XML/XML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 11534.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				},
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 6,
+							"file": "/home/nick/FSparser/ATparse.pl",
+							"settings":
+							{
+								"buffer_size": 2864,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2041,
+										2041
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Perl/Perl.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 792.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/home/nick/FSparser/Div_RD_parser.pl",
+							"settings":
+							{
+								"buffer_size": 3966,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1620,
+										1620
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Perl/Perl.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 1039.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 8,
+							"file": "/home/nick/FSparser/TtoolParser.pl",
+							"settings":
+							{
+								"buffer_size": 3296,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1293,
+										1293
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Perl/Perl.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 1540.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 9,
+							"file": "/home/nick/FSparser/perl_example.pl",
+							"settings":
+							{
+								"buffer_size": 8567,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3757,
+										3757
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Perl/Perl.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 3265.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.5,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 184.0
+			},
+			"position": "0,1,0,0,0,65,24,705,504,1920,1080",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": false,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

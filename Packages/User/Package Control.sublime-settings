@@ -1,0 +1,22 @@
+{
+	"auto_upgrade_last_run": 1352302423,
+	"installed_packages":
+	[
+		"AndyPython",
+		"DetectSyntax",
+		"Package Control",
+		"Python Flake8 Lint",
+		"Python PEP8 Autoformat",
+		"Rails Related Files",
+		"RSpec",
+		"RubyEval",
+		"SmartMarkdown",
+		"ST2SyntaxFromFileName",
+		"SublimeLinter",
+		"SublimeREPL",
+		"SublimeRope",
+		"Terminal",
+		"Theme - Soda",
+		"Xdebug"
+	]
+}

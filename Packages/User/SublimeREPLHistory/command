@@ -1,0 +1,76 @@
+-r
+-getwd()
+-source('model+check.r')
+-source('model_check.r')
+-source("model_check.r")
+-source("modelcheck.r")
+-ls()
+-clear
+-clean
+-for (i in c(3,5,7)) {}
+-for (i in c(3,5,7)) {
+-print i , "\\n"
+-for (i in c(3,5,7)) {
+-print (i)
+-}
+-source(modelcheck.r)
+-source('modelcheck.r')
+-SharpeRatio.annualized(active_ann_ret_g, Rf = 0, scale = 1, geometric=FALSE)
+-a <-SharpeRatio.annualized(active_ann_ret_g, Rf = 0, scale = 1, geometric=FALSE)
+-a
+-summary(a)
+-dim(a)
+-a[1,1]
+-a
+-a <-SharpeRatio.annualized(active_ann_ret_g, Rf = 0, scale = NA, geometric=FALSE)
+-a
+-source('modelcheck.r')
+-write.zoo(xts.merge(active_ann_ret_g,active_ann_ret_i,file= paste(wdsz/12, "Yr_ret_data.csv", sep = "_"), sep= ",")
+-)
+-write.zoo(merge(active_ann_ret_g,active_ann_ret_i,file= paste(wdsz/12, "Yr_ret_data.csv", sep = "_"), sep= ","))
+-write.zoo(merge(active_ann_ret_g,active_ann_ret_i),file= paste(wdsz/12, "Yr_ret_data.csv", sep = "_"), sep= ","))
+-write.zoo(merge(active_ann_ret_g,active_ann_ret_i),file= paste(wdsz/12, "Yr_ret_data.csv", sep = "_"), sep= ",")
+-source('modelcheck.r')
+-setwd("/home/nick/model_check/Gloabl_model")
+-setwd("/home/nick/model_check/Global_model")
+-source('modelcheck.r')
+-getwd()
+-setwd("/home/nick/model_check/Global_model")
+-source('modelcheck.r')
+-a <- mat.or.vec(3,2)
+-a
+-a[1, ] <-1
+-a
+-source('modelcheck.r')
+-use Cwd\n$dir = getcwd\n\n$workingdir = "/home/nick/FSparser"\nchdir $workingdir\n\n $sourcedir = $dir . "/Source_Data"\n\nfind( sub { my $f = $_; push( @datafile, $f ) if $f =~ /^Div_RD\\_\\d{1}(.*)\\.txt$/; },$sourcedir);
+-find( sub { my $f = $_; push( @datafile, $f ) if $f =~ /^Div_RD\\_\\d{1}(.*)\\.txt$/; },$sourcedir);
+-use Cwd\n$dir = getcwd\n\n$workingdir = "/home/nick/FSparser"\nchdir $workingdir\n\n $sourcedir = $dir . "/Source_Data"\n\nfind( sub { my $f = $_; push( @datafile, $f ) if $f =~ /^Div_RD\\_\\d{1}(.*)\\.txt$/; },$sourcedir);
+-print @datafile
+-use File::Find
+-use Cwd\n$dir = getcwd\n\n$workingdir = "/home/nick/FSparser"\nchdir $workingdir\n\n $sourcedir = $dir . "/Source_Data"\n\nfind( sub { my $f = $_; push( @datafile, $f ) if $f =~ /^Div_RD\\_\\d{1}(.*)\\.txt$/; },$sourcedir);
+-print @datafile
+-$#datafile
+-find( sub { my $f = $_; push( @datafile, $f ) if $f =~ /^Div_RD\\_(.*)\\.txt$/; },$sourcedir);
+-print @datafile
+-find( sub { my $f = $_; push( @datafile, $1 ) if $f =~ /^Div_RD\\_(.*)\\.txt$/; },$sourcedir);
+-print @datafile
+-find( sub { my $f = $_; push( @datafile, $1 ) if $f =~ m/^Div_RD\\_(.*)\\.txt$/; },$sourcedir);
+-print @datafile
+-@datafile = ()
+-find( sub { my $f = $_; push( @datafile, $1 ) if $f =~ m/^Div_RD\\_(.*)\\.txt$/; },$sourcedir);
+-@datafile = ()
+-find( sub { my $f = $_; push( @datafile, $1 ) if $f =~ m/^Div_RD\\_(.*)\\.txt$/; },$sourcedir);
+-print @datafile
+-my $t = Time::Piece->strptime("20111230", "%Y%m%d");
+-use Time::Piece;
+-my $t = Time::Piece->strptime("20111230", "%Y%m%d");
+-$d = "20120131"
+-$d =~ m/^(\\d{4})(\\d{2})(\\d{2})$/)
+-$d =~ m/^(\\d{4})(\\d{2})(\\d{2})$/
+-$1
+-print $1
+-if($d =~ m/^(\\d{4})(\\d{2})(\\d{2})$/) { print $2.'/'.$3.'/'.$1}
+-getcwd
+-Div_RD_parser.perl
+-Div_RD_parser.pl
+-#my $file=$ARGV[0];\nmy $file="/home/nick/FSparser/Source_Data/Div_RD_1_Summit_PBK.txt";\n\n# Open and read the trade data file and parsing it only drag out the data item listed in @symtrade\nopen (Data, $file) or die ("Could not open $file: $!");\n\n#read line by line and choose the data that match the selected stock symbol\nmy $line = <Data>;\n@header=split(';',$line);\n$NOF=0.5*($#header+1-8);\n#print $NOF;\n%dataset=();\nfor ( $i=0;$i<$NOF;$i++)\n{\n$header[8+$i*2]=substr($header[8+$i*2],1,-1);\n$dataset{$header[8+$i*2]}={%factor};\n\n}\n\n#print substr($header[1],1,-1);\n# print "$line \\n";\n# print "number of factors is $NOF \\n "; \n\n while (defined ($line = <Data>)) {\n     chomp $line;\n\n	@data=split(';',$line);\n	for($i=0;$i<$NOF;$i++)\n	{\n	if(!exists($dataset{$header[8+$i*2]}{$data[3]}))\n	{\n	$dataset{$header[8+$i*2]}{$data[3]}={%quartile};\n	for($k=1;$k<5;$k++)\n	{\n	$dataset{$header[8+$i*2]}{$data[3]}{$k}=[@tmp];\n	}\n	$dataset{$header[8+$i*2]}{$data[3]}{'NA'}=[@tmp];\n	$dataset{$header[8+$i*2]}{$data[3]}{'Universe'}=[@tmp];\n	}\n	#print "$data[8+$i*2+1]\\n";\n	if($data[5] ne 'NA' && $data[6] ne 'NA')\n	{\n	$dataset{$header[8+$i*2]}{$data[3]}{$data[8+$i*2+1]}[0]+=($data[5]*$data[6]);\n	#print "$dataset{$header[8+$i*2]}{$data[3]}{$data[8+$i*2+1]}[1]\\n";\n	$dataset{$header[8+$i*2]}{$data[3]}{$data[8+$i*2+1]}[1]+=$data[6];\n	$dataset{$header[8+$i*2]}{$data[3]}{'Universe'}[0]+=($data[5]*$data[6]);\n	$dataset{$header[8+$i*2]}{$data[3]}{'Universe'}[1]+=$data[6];\n	}\n	}\n	\n }\nclose Data;

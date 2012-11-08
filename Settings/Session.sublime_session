@@ -1,0 +1,328 @@
+{
+	"folder_history":
+	[
+	],
+	"last_window_id": 1,
+	"settings":
+	{
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "#!/usr/local/bin/ruby\n\n##\n# @file      hashOfCounts.rb\n# @author    Mitch Richling <http://www.mitchr.me/>\n# @Copyright Copyright 2006 by Mitch Richling.  All rights reserved.\n# @brief     Building up a hash of counts.@EOL\n# @Keywords  ruby example hash array perl counts\n# @Std       Ruby 1.8\n#\n#            A very common Perl ipdiom is to use a hash to count things\n#            in categories.  The Perl idiom replicates the natural SQL\n#            construct of COUNT/GROUP BY:\n#\n#               SELECT foo, COUNT(bar) FROM foobar GROUP BY foo;\n#\n#            We illustrate two Ruby recipes for doing the same thing.\n#\n#            See the hashOfArray.rb example too.\n\ndata = [ 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3]\n\n# Probably the most verbose way to do it..\naHash=Hash::new\ndata.each do |x|\n  if aHash.member?(x) then\n    aHash[x] += 1\n  else\n    aHash[x] = 1\n  end\nend\nputs(\"===============\")\naHash.each do |x,y|\n  puts(\"#{x} : #{y.inspect}\")\nend\n\n# The following is probably the most common Ruby way to get this done,\n# and it happens to also be rather perl-ish in flavor.  This example\n# depends upon the fact that + creates a NEW object.\naHash=Hash.new(0)\ndata.each do |x|\n  aHash[x] += 1\nend\nputs(\"===============\")\naHash.each do |x,y|\n  pudfdfs(\"#{x} : #{y.inspect}\")\nend",
+					"file": "/home/nick/ruby_learning/test.rb",
+					"file_size": 1279,
+					"file_write_time": 1351802121000000,
+					"settings":
+					{
+						"buffer_size": 1280,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 341.0,
+				"selected_items":
+				[
+					[
+						"pack",
+						"Package Control: Install Package"
+					],
+					[
+						"pa",
+						"Package Control: Remove Package"
+					],
+					[
+						"pac",
+						"Package Control: Install Package"
+					],
+					[
+						"p",
+						"Package Control: Remove Package"
+					],
+					[
+						"Package Control: r",
+						"Package Control: Remove Package"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Remove Package"
+					],
+					[
+						"",
+						"Package Control: Install Package"
+					],
+					[
+						"p	",
+						"Package Control: Install Package"
+					],
+					[
+						"pa	",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 490.0
+			},
+			"console":
+			{
+				"height": 139.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/nick/python_learning/test.py",
+				"/home/nick/.config/sublime-text-2/Packages/SublimeRope/SublimeRope.sublime-settings",
+				"/home/nick/.config/sublime-text-2/Packages/Package Control/Package Control.sublime-settings",
+				"/home/nick/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+				"/home/nick/.config/sublime-text-2/Packages/Default/exec.py",
+				"/home/nick/ruby_learning/test.rb",
+				"/home/nick/.config/sublime-text-2/Packages/User/rspec.py"
+			],
+			"find":
+			{
+				"height": 37.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"!\"",
+					"tidy"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/nick/ruby_learning/test.rb",
+							"settings":
+							{
+								"buffer_size": 1280,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										472,
+										472
+									]
+								],
+								"settings":
+								{
+									"annotations":
+									[
+										"TODO",
+										"README",
+										"FIXME"
+									],
+									"csslint_options":
+									{
+										"adjoining-classes": "warning",
+										"box-model": true,
+										"box-sizing": "warning",
+										"compatible-vendor-prefixes": "warning",
+										"display-property-grouping": true,
+										"duplicate-background-images": "warning",
+										"duplicate-properties": true,
+										"empty-rules": true,
+										"errors": true,
+										"fallback-colors": "warning",
+										"floats": "warning",
+										"font-faces": "warning",
+										"font-sizes": "warning",
+										"gradients": "warning",
+										"ids": "warning",
+										"import": "warning",
+										"important": "warning",
+										"known-properties": true,
+										"outline-none": "warning",
+										"overqualified-elements": "warning",
+										"qualified-headings": "warning",
+										"regex-selectors": "warning",
+										"rules-count": "warning",
+										"shorthand": "warning",
+										"star-property-hack": "warning",
+										"text-indent": "warning",
+										"underscore-property-hack": "warning",
+										"unique-headings": "warning",
+										"universal-selector": "warning",
+										"vendor-prefix": true,
+										"zero-units": "warning"
+									},
+									"gjslint_ignore":
+									[
+										110
+									],
+									"gjslint_options":
+									[
+									],
+									"javascript_linter": "jshint",
+									"jshint_options":
+									{
+										"browser": true,
+										"evil": true,
+										"regexdash": true,
+										"sub": true,
+										"trailing": true,
+										"wsh": true
+									},
+									"pep8": true,
+									"pep8_ignore":
+									[
+										"E501"
+									],
+									"perl_linter": "perlcritic",
+									"pyflakes_ignore":
+									[
+									],
+									"pyflakes_ignore_import_*": true,
+									"sublimelinter": true,
+									"sublimelinter_delay": 2,
+									"sublimelinter_disable":
+									[
+									],
+									"sublimelinter_executable_map":
+									{
+									},
+									"sublimelinter_fill_outlines": false,
+									"sublimelinter_gutter_marks": false,
+									"sublimelinter_mark_style": "outline",
+									"sublimelinter_notes": false,
+									"sublimelinter_objj_check_ascii": false,
+									"sublimelinter_popup_errors_on_save": false,
+									"sublimelinter_syntax_map":
+									{
+										"C++": "c",
+										"Python Django": "python",
+										"Ruby on Rails": "ruby"
+									},
+									"sublimelinter_wrap_find": true,
+									"syntax": "Packages/Ruby/Ruby.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 4.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 184.0
+			},
+			"position": "0,0,0,0,0,375,331,1015,811,1920,1080",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": false,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
